@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-Midhlaaj</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- Scroll Progress -->
+<div id="scroll-bar"></div>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Midhlaj P. Basheer<span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#workshops">Workshops</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="certificates/MidhlajBasheer_Resume.pdf.pdf" target="_blank" class="btn-resume" id="downloadResume">Download CV</a>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+
+    <!-- PHOTO -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-outer">
+        <div class="hero-photo-placeholder">
+          <!--<span>M</span>-->
+          <img src="certificates/midhh.bw.png" alt="Midhlaj P.B." class="hero-photo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <p class="hero-greeting">Hey there, I'm</p>
+      <h1 class="hero-name">Midhlaj <em>P.B.</em></h1>
+      <div class="hero-typing-wrap">
+        > <span class="typing-text" id="typingText"></span><span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-desc">
+        BCA student at Yenepoya(Deemed-to-be-University)-2026, passionate about building intelligent systems — from autonomous robots to AI-powered applications. Bridging hardware and software with purpose.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-outline">Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://linkedin.com/in/midhlajpbasheer" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/mxdhlaaj" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919645333075" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://mail.google.com/mail/u/0/?to=midhlajpbasheerofficial@gmail.com&fs=1&tf=cm" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/mdhxingit" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS STRIP
+============================================================ -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="8.7" data-decimal="1">0</span>
+      <span class="stat-label">CGPA</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="15" data-suffix="+">0</span>
+      <span class="stat-label">Certifications</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="2">0</span>
+      <span class="stat-label">Major Projects</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="4">0</span>
+      <span class="stat-label">Languages Spoken</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-tag reveal">About Me</p>
+    <h2 class="section-title reveal">More than just <span>code & circuits</span></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a final-year BCA student from Thrissur, Kerala, driven by curiosity about how machines can perceive, learn, and act. My journey spans from programming Python scripts to building robots that sort objects with 90%+ accuracy using computer vision.
+        </p>
+        <p>
+          Holding Azure certifications (DP-900 & AI-900) alongside 15+ Coursera certificates, I'm constantly levelling up across AI, Machine Learning, IoT, and embedded systems. I believe the best engineers understand both the algorithm and the hardware it runs on.
+        </p>
+        <p>
+          Outside tech, I channel creativity as a professional photographer at <strong>YHITE Media</strong> — because understanding light, composition, and timing makes you a better problem-solver everywhere.
+        </p>
+      </div>
+      <div class="fun-facts reveal">
+        <div class="fact-card">
+          <span class="fact-icon">🤖</span>
+          <p class="fact-text">Built a <strong>sorting robot</strong> with Raspberry Pi that classifies objects by color & distance in real-time</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon">☁️</span>
+          <p class="fact-text">Microsoft <strong>Azure certified</strong> in both Data Fundamentals and AI Fundamentals</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon">📸</span>
+          <p class="fact-text">Professional photographer at <strong>YHITE Media</strong> — art meets engineering</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon">🌐</span>
+          <p class="fact-text">Fluent in <strong>English, Malayalam, Hindi & Tamil</strong> — communication is a superpower</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon">🎓</span>
+          <p class="fact-text"><strong>8.7 CGPA</strong> at Yenepoya University (graduating 2026)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+============================================================ -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-tag reveal">Technical Arsenal</p>
+    <h2 class="section-title reveal">Skills & <span>Technologies</span></h2>
+    <div class="skills-grid">
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+          <span class="skill-cat-name">Programming</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-microchip"></i></div>
+          <span class="skill-cat-name">Hardware & Tools</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">NodeMCU</span>
+          <span class="skill-tag">Raspberry Pi</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Power BI</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+          <span class="skill-cat-name">Domains</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Deep Learning</span>
+          <span class="skill-tag">IoT</span>
+          <span class="skill-tag">Robotics</span>
+          <span class="skill-tag">Automation</span>
+          <span class="skill-tag">Embedded Systems</span>
+          <span class="skill-tag">Data Science</span>
+        </div>
+      </div>
+
+      <div class="skill-category reveal">
+        <div class="skill-cat-header">
+          <div class="skill-cat-icon"><i class="fas fa-users"></i></div>
+          <span class="skill-cat-name">Other Skills</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Manual Testing</span>
+          <span class="skill-tag">Debugging</span>
+          <span class="skill-tag">Circuit Design</span>
+          <span class="skill-tag">Tech Documentation</span>
+          <span class="skill-tag">Automation Logic</span>
+          <span class="skill-tag">Photography</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+============================================================ -->
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-tag reveal">What I've Built</p>
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-header">
+          <span class="project-icon">🤖</span>
+          <h3 class="project-title">Automated Object Sorting Robot</h3>
+          <p class="project-sub">Hardware + AI Vision</p>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">
+            A real-time autonomous sorting system built on Raspberry Pi, combining color detection with ultrasonic sensing to classify and physically sort objects with over 90% accuracy.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">Raspberry Pi</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">OpenCV</span>
+            <span class="tech-badge">Servo Motors</span>
+          </div>
+          <ul class="project-highlights">
+            <li>90%+ sorting accuracy using computer vision</li>
+            <li>Real-time color detection and object classification</li>
+            <li>Hardware-software integration with GPIO control</li>
+            <li>Autonomous operation with minimal human intervention</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-header" style="background: linear-gradient(135deg, #2D4A8E, #3B72D4);">
+          <span class="project-icon">📚</span>
+          <h3 class="project-title">StudyBuddy</h3>
+          <p class="project-sub">Collaborative Learning Platform</p>
+        </div>
+        <div class="project-body">
+          <p class="project-desc">
+            A peer-to-peer collaborative study platform designed to facilitate knowledge sharing among students, featuring offline access capabilities for uninterrupted learning.
+          </p>
+          <div class="project-tech">
+            <span class="tech-badge">HTML/CSS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Offline-First</span>
+          </div>
+          <ul class="project-highlights">
+            <li>Peer-to-peer knowledge sharing architecture</li>
+            <li>Offline access for uninterrupted studying</li>
+            <li>Real-time collaboration features</li>
+            <li>Student-centered UX design</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATIONS
+============================================================ -->
+<section id="certifications">
+  <div class="section-inner">
+    <p class="section-tag reveal">Verified Learning</p>
+    <h2 class="section-title reveal">Certifications & <span style="color:var(--teal-light)">Credentials</span></h2>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal" data-cert-img="certificates/AI-900.png" data-cert-name="Azure Data Fundamentals (DP-900)">
+        <div class="cert-logo" style="background:rgba(0,120,215,0.2)">☁️</div>
+        <div class="cert-info">
+          <p class="cert-name">Azure Data Fundamentals (DP-900)</p>
+          <p class="cert-issuer">Microsoft</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-cert-img="certificates/DP-900.png" data-cert-name="Azure AI Fundamentals (AI-900)">
+        <div class="cert-logo" style="background:rgba(0,120,215,0.2)">🧠</div>
+        <div class="cert-info">
+          <p class="cert-name">Azure AI Fundamentals (AI-900)</p>
+          <p class="cert-issuer">Microsoft</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-cert-img="certificates/AZ-900.png" data-cert-name="Azure Fundamentals (AZ-900)">
+        <div class="cert-logo" style="background:rgba(52,152,219,0.2)">🎓</div>
+        <div class="cert-info">
+          <p class="cert-name">Azure Fundamentals (AZ-900)</p>
+          <p class="cert-issuer">Microsoft</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-cert-img="certificates/PL-900.png" data-cert-name="Microsoft Power Platform Fundamentals (AI-900)">
+        <div class="cert-logo" style="background:rgba(0,120,215,0.2)">🧠</div>
+        <div class="cert-info">
+          <p class="cert-name">Microsoft Power Platform Fundamentals (PL-900)</p>
+          <p class="cert-issuer">Microsoft</p>
+        </div>
+      </div>
+          
+      <div class="cert-card reveal" data-cert-img="certificates/ai-prompting.png" data-cert-name="Advanced AI Prompting Techniques">
+        <div class="cert-logo" style="background:rgba(66,133,244,0.2)">🎯</div>
+        <div class="cert-info">
+          <p class="cert-name">Advanced AI Prompting Techniques</p>
+          <p class="cert-issuer">Google · Coursera</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-cert-img="certificates/digital-skills.png" data-cert-name="Digital Skills Certification">
+        <div class="cert-logo" style="background:rgba(52,152,219,0.2)">💻</div>
+        <div class="cert-info">
+          <p class="cert-name">Digital Skills Certification</p>
+          <p class="cert-issuer">Infosys SpringBoard</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-cert-img="certificates/ml-deeplearning.png" data-cert-name="Machine Learning & Deep Learning">
+        <div class="cert-logo" style="background:rgba(15,118,110,0.25)">🤖</div>
+        <div class="cert-info">
+          <p class="cert-name">Machine Learning & Deep Learning</p>
+          <p class="cert-issuer">Coursera (15+ certificates)</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal" data-cert-img="certificates/data-science.png" data-cert-name="Data Science & AI/ML Specialization">
+        <div class="cert-logo" style="background:rgba(15,118,110,0.25)">📊</div>
+        <div class="cert-info">
+          <p class="cert-name">Data Science & AI/ML Specialization</p>
+          <p class="cert-issuer">Coursera</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WORKSHOPS
+============================================================ -->
+<section id="workshops">
+  <div class="section-inner">
+    <p class="section-tag reveal">Hands-On Experience</p>
+    <h2 class="section-title reveal">Workshops & <span>Activities</span></h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <p class="timeline-tag">30-Hour Intensive · AI/ML</p>
+          <h3 class="timeline-title">AI/ML Workshop — Model Building</h3>
+          <p class="timeline-desc">An intensive hands-on workshop where I designed, trained, and evaluated machine learning models across multiple datasets. Covered supervised learning, feature engineering, and model optimization techniques.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <p class="timeline-tag">Lab Activities · IoT</p>
+          <h3 class="timeline-title">IoT Lab — Arduino & NodeMCU</h3>
+          <p class="timeline-desc">Practical IoT lab sessions working with Arduino microcontrollers and NodeMCU ESP8266 boards. Built sensor networks, programmed wireless communication, and created connected device prototypes.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <p class="timeline-tag">3-Day Workshop · Robotics</p>
+          <h3 class="timeline-title">Robotics & Automation — Raspberry Pi</h3>
+          <p class="timeline-desc">A focused 3-day robotics bootcamp building autonomous systems with Raspberry Pi. Covered computer vision, motor control, sensor integration, and real-time decision making — directly inspiring the Sorting Robot project.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-card">
+          <p class="timeline-tag">Professional Role · Photography</p>
+          <h3 class="timeline-title">YHITE Media — Professional Photographer</h3>
+          <p class="timeline-desc">Working as a professional photographer at YHITE Media, developing an eye for composition, lighting, and visual storytelling — skills that inform better UI/UX design and technical documentation.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-tag reveal">Get In Touch</p>
+    <h2 class="section-title reveal">Let's <span>Work Together</span></h2>
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <p>I'm actively seeking internships and collaborations in AI/ML, robotics, and IoT. Whether you have a project idea, an opportunity, or just want to talk tech — my inbox is always open.</p>
+        <div class="contact-links">
+          <a href="https://mail.google.com/mail/u/0/?to=midhlajpbasheerofficial@gmail.com&fs=1&tf=cm" target="_blank" class="contact-link">
+            <i class="fas fa-envelope"></i> midhlajpbasheerofficial@gmail.com
+          </a>
+          <a href="https://wa.me/919645333075" target="_blank" class="contact-link">
+            <i class="fab fa-whatsapp"></i> +91 96453 33075
+          </a>
+          <a href="https://linkedin.com/in/midhlajpbasheer" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin-in"></i> linkedin.com/in/midhlajpbasheer
+          </a>
+          <a href="https://instagram.com/mxdhlaaj" target="_blank" class="contact-link">
+            <i class="fab fa-instagram"></i> @mxdhlaaj
+          </a>
+          <a href="#" class="contact-link">
+            <i class="fas fa-map-marker-alt"></i> Thrissur, Kerala, India
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+
+  <form id="contactForm">
+
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message"
+        placeholder="Tell me about your project or opportunity..."
+        required></textarea>
+    </div>
+
+    <button type="submit" class="btn-send">
+      Send Message
+      <i class="fas fa-paper-plane" style="margin-left:0.5rem"></i>
+    </button>
+
+  </form>
+
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <p>Designed & built by <span>Midhlaj P.B.</span> · Thrissur, Kerala · <span>2026</span></p>
+</footer>
+<!-- CERTIFICATE MODAL -->
+<div id="cert-modal" class="cert-modal-overlay" role="dialog" aria-modal="true" aria-label="Certificate Preview">
+  <div class="cert-modal-box">
+    <button class="cert-modal-close" id="certModalClose" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+    <p class="cert-modal-title" id="certModalTitle"></p>
+    <div class="cert-modal-img-wrap">
+      <img src="" alt="Certificate" id="certModalImg" />
+    </div>
+  </div>
+</div>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("gjrMuuS8Gr4SclTuB");
+</script>
+
+<script src="script.js"></script>
+
+<!-- ============================================================
+     SCRIPTS
+============================================================ -->
+
+</body>
+</html>
